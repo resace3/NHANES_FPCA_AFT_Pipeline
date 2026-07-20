@@ -53,6 +53,8 @@ class RepositoryContentsTests(unittest.TestCase):
         self.assertTrue(image_path.is_file())
         self.assertIn("docs/assets/nhanes-fpca-aft-pipeline.svg", readme)
         self.assertIn("https://github.com/resace3/FPCA_AFT_Health_Addon", readme)
+        self.assertIn("actions/workflows/tests.yml/badge.svg", readme)
+        self.assertIn("img.shields.io/github/last-commit", readme)
 
 
 if __name__ == "__main__":

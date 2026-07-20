@@ -1,5 +1,10 @@
 # NHANES FPCA AFT Pipeline
 
+[![Repository checks](https://github.com/resace3/NHANES_FPCA_AFT_Pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/resace3/NHANES_FPCA_AFT_Pipeline/actions/workflows/tests.yml)
+[![Jupyter notebooks](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![R](https://img.shields.io/badge/R-Analysis-276DC3?logo=r&logoColor=white)](https://www.r-project.org/)
+[![GitHub last commit](https://img.shields.io/github/last-commit/resace3/NHANES_FPCA_AFT_Pipeline)](https://github.com/resace3/NHANES_FPCA_AFT_Pipeline/commits/main)
+
 Reproducible analysis notebooks for processing NHANES accelerometry data, deriving functional principal component analysis (FPCA) scores, and fitting accelerated failure time (AFT) survival models.
 
 ![NHANES FPCA and AFT notebook execution order with CSV outputs](docs/assets/nhanes-fpca-aft-pipeline.svg)

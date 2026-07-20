@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1300" viewBox="0 0 1600 1300" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1140" viewBox="0 0 1600 1140" role="img" aria-labelledby="title description">
   <title id="title">NHANES FPCA and AFT analysis pipeline</title>
   <desc id="description">Run the raw steps notebook, then eligibility, then the covariate and FPCA notebooks in parallel, and finally the AFT spline analysis notebook. Each stage lists its CSV outputs.</desc>
   <defs>
@@ -33,14 +33,12 @@
       .filename { font: 600 24px "Cascadia Mono", "SFMono-Regular", Consolas, monospace; fill: #17324d; }
       .output-label { font: 800 16px Inter, "Segoe UI", Arial, sans-serif; letter-spacing: 2px; fill: #4f6577; }
       .output { font: 600 20px "Cascadia Mono", "SFMono-Regular", Consolas, monospace; fill: #0a6c70; }
-      .note { font: 700 20px Inter, "Segoe UI", Arial, sans-serif; fill: #8a5700; }
-      .note-small { font: 500 17px Inter, "Segoe UI", Arial, sans-serif; fill: #7c6844; }
       .arrow { fill: none; stroke: #193f6a; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
     </style>
   </defs>
 
-  <rect width="1600" height="1300" rx="36" fill="url(#page)"/>
-  <rect width="1600" height="1300" rx="36" fill="url(#grid)"/>
+  <rect width="1600" height="1140" rx="36" fill="url(#page)"/>
+  <rect width="1600" height="1140" rx="36" fill="url(#grid)"/>
   <circle cx="1420" cy="110" r="170" fill="#1aa49b" opacity="0.05"/>
   <circle cx="130" cy="1160" r="240" fill="#174779" opacity="0.045"/>
 
@@ -134,12 +132,4 @@
   <rect x="968" y="1023" width="285" height="42" rx="11" fill="#e7f8f6" stroke="#81c9c5"/>
   <text x="985" y="1050" class="output">fpca_spline_lookup.csv</text>
 
-  <!-- Related project -->
-  <g filter="url(#shadow)">
-    <rect x="250" y="1148" width="1100" height="105" rx="20" fill="#fffaf0" stroke="#d89a2b" stroke-width="2"/>
-  </g>
-  <circle cx="310" cy="1200" r="27" fill="#d18b0b"/>
-  <path d="M310 1183L315 1194L327 1195L318 1203L321 1216L310 1209L299 1216L302 1203L293 1195L305 1194Z" fill="#fff"/>
-  <text x="355" y="1193" class="note">RELATED DOWNSTREAM PROJECT · FPCA_AFT_Health_Addon</text>
-  <text x="355" y="1224" class="note-small">Uses the NHANES mean curve, first eigenfunction, and FPCA spline lookup artifacts.</text>
 </svg>
