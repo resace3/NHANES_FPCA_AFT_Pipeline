@@ -46,6 +46,14 @@ class RepositoryContentsTests(unittest.TestCase):
                     self.assertTrue(expected_columns.issubset(reader.fieldnames or []))
                     self.assertIsNotNone(next(reader, None))
 
+    def test_readme_includes_workflow_image_and_related_project(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        image_path = ROOT / "docs" / "assets" / "nhanes-fpca-aft-pipeline.svg"
+
+        self.assertTrue(image_path.is_file())
+        self.assertIn("docs/assets/nhanes-fpca-aft-pipeline.svg", readme)
+        self.assertIn("https://github.com/resace3/FPCA_AFT_Health_Addon", readme)
+
 
 if __name__ == "__main__":
     unittest.main()
